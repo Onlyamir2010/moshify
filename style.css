@@ -1,0 +1,45 @@
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 2rem 2rem;
+}
+.container{
+  transform: rotate(-10deg);
+width: 500px;
+border: 10px solid black;
+box-shadow: 0 0 20px 30px #f9f9f9;
+border-radius: 50px;
+transition:transform 3s ;
+overflow: hidden;
+}
+.container:hover{
+  transform: rotate(0deg);
+}
+
+.container:hover .profilepicture{
+transform: scale(1.1);
+}
+.containerheader{
+  padding: 1rem 2rem;
+}
+
+.containerfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgb(34,195,144);
+  background: linear-gradient(63deg, rgba(34,195,144,1) 33%, rgba(75,184,225,1) 83%);
+  color: white;
+}
+
+.profilepicture{
+  border: 3px solid white;
+  border-radius: 100%;
+  display: inline;
+  transition:transform 3s
+}
+.username{
+  padding: 1rem 3rem;
+}
